@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #081B29;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: transparent;
+}
+
+#logo{
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    padding-right: 30px;
+    justify-items: center;
+    gap: 20px;
+}
+
+.navbar > a{
+    text-decoration: none;
+}
+
+a{
+    padding: inherit;
+}
+
+a:hover{
+    transition: .5s;
+    color: #02ABEC;
+}
+
+.active{
+    color: #02ABEC;
+}
+
+section img{
+    width: 200px;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content{
+    & h1{
+        font-size: 56px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    & h3{
+        font-size: 32px;
+        font-weight: 70;
+        color: #02ABEC;
+        padding-bottom: 10px;
+    }
+
+    & p{
+        font-size: 16px;
+        margin: 20px 0 40px;
+    }
+
+    .btn-box{
+        display: flex;
+        justify-content: space-between;
+        width: 345px;
+        height: 50px;
+    }
+
+
+}
+
+.btn-box a{
+    position: relative;
+    z-index: -1;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #02ABEC;
+    border: 2px solid #02ABEC;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #081B29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: #02ABEC;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent; /* Botão transparente */
+    color: #02ABEC;
+}
+
+.btn-box a:nth-child(2):hover{
+    color: #081B29;
+}
+
+
+.btn-box a:nth-child(2)::before{
+    background-color: #02ABEC;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #081B29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40PX;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #02ABEC;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #02ABEC;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    color: #081B29;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #02ABEC;
+    color: aliceblue;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+    transition: .5s;
+    }
+
+    section img{
+        padding-left: 50px;
+        width: 500px;
+        border-radius: 100%
+    }
